@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1e40af;
+  --secondary-color: #3b82f6;
+  --accent-color: #60a5fa;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.form-input {
+  @apply block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.btn {
+  @apply px-4 py-2 font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply btn bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700;
+}
+
+.btn-success {
+  @apply btn bg-green-600 text-white hover:bg-green-700;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.table-container {
+  @apply overflow-x-auto bg-white rounded-lg shadow;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table th {
+  @apply px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-left bg-gray-50;
+}
+
+.table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+
+.pagination {
+  @apply flex justify-center mt-6 space-x-2;
+}
+
+.pagination-item {
+  @apply px-3 py-1 rounded-md bg-white border border-gray-300 text-gray-700 hover:bg-gray-100 cursor-pointer;
+}
+
+.pagination-item-active {
+  @apply pagination-item bg-blue-500 text-white border-blue-500 hover:bg-blue-600;
+}
+
+.pagination-item-disabled {
+  @apply pagination-item bg-gray-100 text-gray-400 cursor-not-allowed hover:bg-gray-100;
+}
+
+.sidebar-link {
+  @apply flex items-center px-4 py-3 text-gray-600 rounded-md transition-colors hover:bg-blue-50 hover:text-blue-700;
+}
+
+.sidebar-link-active {
+  @apply sidebar-link bg-blue-50 text-blue-700;
+}
