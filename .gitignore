@@ -1,0 +1,27 @@
+# ===== Node / React =====
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Environment =====
+.env
+.env.local
+.env.production
+
+# ===== Spring Boot =====
+target/
+*.log
+*.tmp
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# ===== OS =====
+Thumbs.db
